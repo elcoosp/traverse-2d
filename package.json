@@ -3,13 +3,15 @@
 	"version": "1.0.0",
 	"description": "Higher order generators for 2d arrays traversing",
 	"main": "lib/index.js",
+	"module": "lib/index.js",
 	"engines": {
 		"node": ">=10.0.0",
 		"npm": ">=6.0.0"
 	},
 	"scripts": {
 		"test": "jest",
-		"build": "babel src -d lib --ignore '**/*.spec.js'"
+		"build": "babel src -d lib --ignore '**/*.spec.js'",
+		"prepublish": "npm test && npm run build"
 	},
 	"repository": {
 		"type": "git",
