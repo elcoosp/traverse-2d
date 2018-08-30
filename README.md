@@ -39,9 +39,10 @@ import Traverser from "traverser-2d"
 
 const matrix = [[0, 1, 2, 3], [4, 5, 6], [7, 8, 9]]
 
-// Take a yielder function called on each move,
-// a column and row predicate to check if not out of bounds
-// default function are provided for all arguments
+// Take a yielder function called on each move in the matrix,
+// a column and row predicate,
+// which should return true if should go to the next col/row.
+// Default functions are provided for all arguments
 const T = Traverser()
 const traversed = [...T.fromTopLeft(matrix)] // return [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
