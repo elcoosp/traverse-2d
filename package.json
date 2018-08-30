@@ -2,7 +2,11 @@
 	"name": "traverse-2d",
 	"version": "1.0.0",
 	"description": "Higher order generators for 2d arrays traversing",
-	"main": "index.js",
+	"main": "lib/index.js",
+	"engines": {
+		"node": ">=10.0.0",
+		"npm": ">=6.0.0"
+	  },
 	"scripts": {
 		"test": "jest --watchAll",
 		"build": "babel src -d lib --ignore '**/*.spec.js'"
