@@ -20,7 +20,6 @@ Higher order generators for 2D arrays traversing
 
 ## Installation
 
-‼️ **Not currently on npm**
 `npm i -S traverse-2d`
 
 ## Usage
